@@ -60,7 +60,10 @@ INSERT INTO Musica (id_musica, titulo, duracao, id_disco) VALUES
 (27, 'Kashmir', 515, 14),
 (28, 'Trampled Under Foot', 361, 14),
 (29, 'Highway to Hell', 208, 15),
-(30, 'Girls Got Rhythm', 150, 15);
+(30, 'Girls Got Rhythm', 150, 15),
+(31, 'New Horizons', 250, 1),  
+(32, 'Echoes', 300, 3),       
+(33, 'Thunderstruck', 292, 5);
 
 -- Inserir em Usuários
 INSERT INTO Usuario (id_usuario, nome, email, data_registro) VALUES
@@ -81,10 +84,11 @@ INSERT INTO Playlist (id_playlist, titulo, id_usuario) VALUES
 (7, 'Best of The Beatles', 2),
 (8, 'Rap Intenso', 4),
 (9, 'Pop Hits', 5),
-(10, 'Metallica Favorites', 3);
+(10, 'Metallica Favorites', 3),
+(11, 'Top 50', 1);
 
 -- Inserir em Relações Musica_Artista
-INSERT INTO Musica_Artista (id_musica, id_artista) VALUES
+INSERT INTO Artista_Musica (id_musica, id_artista) VALUES
 (1, 1),  -- Come Together - The Beatles
 (2, 1),  -- Something - The Beatles
 (3, 2),  -- Bohemian Rhapsody - Queen
@@ -115,6 +119,9 @@ INSERT INTO Musica_Artista (id_musica, id_artista) VALUES
 (28, 4), -- Trampled Under Foot - Led Zeppelin
 (29, 5), -- Highway to Hell - AC/DC
 (30, 5); -- Girls Got Rhythm - AC/DC
+(31, 1), -- New Horizons - The Beatles
+(32, 3), -- Echoes - Pink Floyd
+(33, 5); -- Thunderstruck - AC/DC
 
 -- Inserir em Relações Playlist_Musica
 INSERT INTO Playlist_Musica (id_playlist, id_musica) VALUES
@@ -193,3 +200,8 @@ INSERT INTO Playlist_Musica (id_playlist, id_musica) VALUES
 (10, 9),  -- Hells Bells
 (10, 10), -- Shoot to Thrill
 (10, 29); -- Highway to Hell
+
+-- Playlist 11: Top 50
+(11, 31), -- New Horizons 
+(11, 32), -- Echoes
+(11, 33); -- Thunderstruck
