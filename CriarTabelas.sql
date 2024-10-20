@@ -40,7 +40,7 @@ CREATE TABLE Playlist (
 );
 
 -- Criar tabela Musica_Artista
-CREATE TABLE Musica_Artista (
+CREATE TABLE Artista_Musica (
     id_musica INT,
     id_artista INT,
     PRIMARY KEY (id_musica, id_artista),
