@@ -45,11 +45,11 @@ A criação das tabelas é fundamental para estruturar o banco de dados de acord
 ### 📍 [Inserção de Dados](https://github.com/z0mer/PJ.BANCO_DE_DADOS/blob/main/Dados.sql)
 A inserção de dados populou as tabelas com informações iniciais para teste e demonstração do sistema. É importante notar que os IDs dos artistas foram inseridos em ordem crescente conforme solicitado.
 
-- Artista: Cinco artistas foram adicionados com IDs de 1 a 5.
-- Disco: Cinco discos foram inseridos, cada um associado a um artista específico.
-- Musica: Dez músicas foram inseridas, cada uma vinculada a um disco.
-- Usuario: Três usuários foram cadastrados no sistema.
-- Playlist: Cinco playlists foram criadas, associadas aos usuários.
+- Artista: 10 artistas foram adicionados com IDs de 1 a 10.
+- Disco: 15 discos foram inseridos, cada um associado a um artista específico.
+- Musica: 33 músicas foram inseridas, cada uma vinculada a um disco.
+- Usuario: 5 usuários foram cadastrados no sistema.
+- Playlist: 11 playlists foram criadas, associadas aos usuários.
 - Musica_Playlist: As relações entre músicas e playlists foram estabelecidas.
 - Artista_Musica: As relações entre músicas e artistas foram definidas, incluindo músicas com múltiplos artistas.
 
